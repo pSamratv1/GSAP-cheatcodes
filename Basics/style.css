@@ -27,3 +27,18 @@ h1{
     display: flex;
     justify-content: center;
 }
+#boxes1 {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+}
+#boxes2 {
+    width: 100px;
+    height: 100px;
+    background-color: lightsalmon;
+}
+#boxes3 {
+    width: 100px;
+    height: 100px;
+    background-color:aquamarine;
+}

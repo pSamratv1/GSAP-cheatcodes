@@ -6,10 +6,12 @@ gsap.to("#box1",{
     backgroundColor:"blue", // we can use the css properties but in camelCase.
     borderRadius: "50%",
     scale: 3,
+    // repeat: -1,
+    // yoyo:true,
 })
 gsap.to("#box2",{
     x: 1000,     // to move to element to defined pixel in x-direction.
-    y: 100,      // to move to element to defined pixel in y-direction.
+    y: 110,      // to move to element to defined pixel in y-direction.
     duration: 2, // duration to move the element into defined pixel (in second).
     delay: 1,    // to create the delay to start the anomations.
     repeat:0,    // to repeat the animation how many time more 1 means the animations runs twice of time. -1 means infinite
@@ -24,4 +26,28 @@ gsap.from("h1",{
     opacity: 0,     // opacity refers to the value of visibility 1 and 0
     y: 30,
     stagger:0.3,    // runs every element with same name it the queue order with delay (on second)
+    
 })
+gsap.to("#boxes1", {
+    x: 1200,
+    duration:1,
+    delay:1,
+    rotate:270,
+    borderRadius: 10
+})
+gsap.to("#boxes2", {
+    x: 1300,
+    duration:1,
+    delay:1.75,
+    rotate:270,
+    borderRadius: 10
+})
+gsap.to("#boxes3", {
+    x: 1400,
+    duration:1,
+    delay:2.5,
+    rotate:270,
+    borderRadius: 10
+})
+// const tl = gsap.timeline()
+
