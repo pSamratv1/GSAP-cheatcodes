@@ -23,5 +23,5 @@ gsap.from("h1",{
     delay:1,
     opacity: 0,     // opacity refers to the value of visibility 1 and 0
     y: 30,
-    stagger:0.6,    // runs every element with same name it the queue order with delay (on second)
+    stagger:0.3,    // runs every element with same name it the queue order with delay (on second)
 })
