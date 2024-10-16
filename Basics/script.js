@@ -28,26 +28,65 @@ gsap.from("h1",{
     stagger:0.3,    // runs every element with same name it the queue order with delay (on second)
     
 })
-gsap.to("#boxes1", {
+
+
+// Asynchronous Way of timelining
+// gsap.to("#boxes1", {
+//     x: 1200,
+//     duration:1,
+//     delay:1,
+//     rotate:270,
+//     borderRadius: 10
+// })
+// gsap.to("#boxes2", {
+//     x: 1300,
+//     duration:1,
+//     delay:1.75,
+//     rotate:270,
+//     borderRadius: 10
+// })
+// gsap.to("#boxes3", {
+//     x: 1400,
+//     duration:1,
+//     delay:2.5,
+//     rotate:270,
+//     borderRadius: 10
+// })
+
+
+
+// synchronous timelining using GSAP Timeline
+var tl = gsap.timeline()
+
+tl.to("#boxes1", {
     x: 1200,
-    duration:1,
+    duration:2,
     delay:1,
     rotate:270,
     borderRadius: 10
 })
-gsap.to("#boxes2", {
+tl.to("#boxes2", {
     x: 1300,
-    duration:1,
-    delay:1.75,
+    duration:2,
     rotate:270,
     borderRadius: 10
 })
-gsap.to("#boxes3", {
+tl.to ("#boxes3", {
     x: 1400,
-    duration:1,
-    delay:2.5,
+    duration:2,
     rotate:270,
     borderRadius: 10
 })
-// const tl = gsap.timeline()
 
+var navtl = gsap.timeline()
+navtl.from("#nav #title",{
+    y:-60,
+    duration:1.3,
+    delay:1,
+    opacity:0
+})
+navtl.from("#part2",{
+    y:-60,
+    duration:2,
+    opacity:0
+})

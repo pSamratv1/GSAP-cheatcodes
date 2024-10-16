@@ -1,9 +1,10 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color:white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', serif;
+    font-family: "Inter";
 }
 html , body{
     height: 100%;
@@ -13,6 +14,7 @@ body{
     background-color: #111;
 }
 #box1{
+    z-index: 0;
     width: 200px;
     height: 200px;
     background-color: crimson;
@@ -24,8 +26,7 @@ body{
 }
 h1{
     width: 100%;
-    display: flex;
-    justify-content: center;
+
 }
 #boxes1 {
     width: 100px;
@@ -41,4 +42,21 @@ h1{
     width: 100px;
     height: 100px;
     background-color:aquamarine;
+}
+#nav {
+    z-index: 100;
+    display: flex;
+    padding: 30px 50px;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#part2{
+    z-index: inherit;
+    display: flex;
+    gap:120px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
 }
