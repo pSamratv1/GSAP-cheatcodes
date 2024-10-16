@@ -13,7 +13,7 @@ html , body{
 body{
     background-color: #111;
 }
-#box1{
+/* #box1{
     z-index: 0;
     width: 200px;
     height: 200px;
@@ -42,7 +42,7 @@ h1{
     width: 100px;
     height: 100px;
     background-color:aquamarine;
-}
+} */
 #nav {
     z-index: 100;
     display: flex;
