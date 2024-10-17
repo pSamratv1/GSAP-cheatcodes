@@ -24,5 +24,7 @@ gsap.to("#page2 h1", {
     scroller: "body",
     markers: true,
     start: "top 0%",
+    scrub: 3,
+    pin: true,
   },
 });
