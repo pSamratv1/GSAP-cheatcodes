@@ -2,12 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lexend";
 }
 html,
 body {
   height: 100%;
   width: 100%;
 }
+
 #page1 {
   width: 100%;
   height: 100%;
@@ -20,9 +22,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: aquamarine;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 3vw 0;
 }
 #page3 {
   width: 100%;
@@ -32,6 +32,14 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+h1 {
+  color: black;
+  font-size: 40vw;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 #box {
   width: 200px;
   height: 200px;
