@@ -8,13 +8,24 @@ body {
   height: 100%;
   width: 100%;
   background-color: black;
+  position: relative;
 }
 #cursor {
-  width: 15px;
-  height: 15px;
-  background-color: yellow;
+  width: 10px;
+  height: 10px;
+  background-color: white;
   border-radius: 50%;
   position: fixed;
+  z-index: 10;
+}
+#ball {
+  position: absolute;
+  margin: 300px 0 0 300px;
+  width: 100px;
+  height: 100px;
+  background-color: #f6e602;
+  border-radius: 50%;
+  z-index: 11;
 }
 #main {
   display: flex;
@@ -28,4 +39,5 @@ body {
   height: 300px;
   width: 500px;
   object-fit: cover;
+  z-index: 9;
 }
