@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lexend";
 }
 html,
 body {
@@ -17,6 +18,10 @@ body {
   border-radius: 50%;
   position: fixed;
   z-index: 10;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 3px;
 }
 #ball {
   position: absolute;
@@ -40,4 +45,9 @@ body {
   width: 500px;
   object-fit: cover;
   z-index: 9;
+}
+#overlay {
+  height: 100%;
+  width: 100%;
+  background-color: red;
 }
