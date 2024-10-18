@@ -18,10 +18,7 @@ imageDiv.addEventListener("mouseenter", function () {
   gsap.to(cursor, {
     scale: 3.5,
   });
-  gsap.to(imageText, {
-    y: 10,
-    duration: 0.3,
-  });
+  gsap.to(imageText, { y: 1, duration: 0.3 });
 });
 imageDiv.addEventListener("mouseleave", function () {
   cursor.innerHTML = "";
