@@ -2,21 +2,25 @@ var main = document.querySelector("#main");
 var cursor = document.querySelector("#cursor");
 var ball = document.querySelector("#ball");
 var imageDiv = document.querySelector("#image");
+var imageText = document.querySelector("#textbelow");
 
 main.addEventListener("mousemove", function (dets) {
   gsap.to(cursor, {
     x: dets.x,
     y: dets.y,
     duration: 1,
-
     ease: "back.out",
   });
 });
-// 9867675004
+
 imageDiv.addEventListener("mouseenter", function () {
   cursor.innerHTML = "View More";
   gsap.to(cursor, {
     scale: 3.5,
+  });
+  gsap.to(imageText, {
+    y: 10,
+    duration: 0.3,
   });
 });
 imageDiv.addEventListener("mouseleave", function () {
@@ -24,6 +28,10 @@ imageDiv.addEventListener("mouseleave", function () {
 
   gsap.to(cursor, {
     scale: 1,
+  });
+  gsap.to(imageText, {
+    y: -60,
+    duration: 0.3,
   });
 });
 ball.addEventListener("mousemove", function (dets) {
