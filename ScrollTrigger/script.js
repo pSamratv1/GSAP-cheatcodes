@@ -22,7 +22,7 @@ gsap.to("#page2 h1", {
   scrollTrigger: {
     trigger: "#page2",
     scroller: "body",
-    markers: true,
+    markers: false,
     start: "top 0%",
     scrub: 3,
     pin: true,
