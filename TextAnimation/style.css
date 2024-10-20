@@ -21,6 +21,10 @@ body {
   align-items: center;
 }
 
+h1 {
+  overflow-y: hidden;
+}
+
 h1 span {
   display: inline-block;
 }
