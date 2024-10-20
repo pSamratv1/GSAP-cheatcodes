@@ -17,6 +17,7 @@ imageDiv.addEventListener("mouseenter", function () {
   cursor.innerHTML = "View More";
   gsap.to(cursor, {
     scale: 3.5,
+    backgroundColor: "#fffefe7c",
   });
   gsap.to(imageText, { y: 1, duration: 0.3 });
 });
@@ -25,6 +26,7 @@ imageDiv.addEventListener("mouseleave", function () {
 
   gsap.to(cursor, {
     scale: 1,
+    backgroundColor: "#fff",
   });
   gsap.to(imageText, {
     y: -60,
